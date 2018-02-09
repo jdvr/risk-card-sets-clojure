@@ -10,4 +10,6 @@
   (testing "given S-S-S it should return true"
     (is (= true (is-valid-set? "S-S-S"))))
   (testing "given C-H-S it should return true"
-    (is (= true (is-valid-set? "C-H-S")))))
+    (is (= true (is-valid-set? "C-H-S"))))
+  (testing "given C-C-C it should return true"
+    (is (= true (is-valid-set? "C-C-C")))))

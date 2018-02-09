@@ -10,4 +10,5 @@
    (or
     (and (some #(= % "H") current-set) (some #(= % "S") current-set) (some #(= % "C") current-set))
     (every? #(= "H" %) current-set)
-    (every? #(= "S" %) current-set))))
+    (every? #(= "S" %) current-set)
+    (every? #(= "C" %) current-set))))
