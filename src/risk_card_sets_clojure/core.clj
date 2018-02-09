@@ -6,6 +6,7 @@
   (str/split set-of-cards #"-"))
 
 (defn is-valid-set? [set-of-cards]
-  (or
-   (= (count (filter #(= "H" %) (split set-of-cards))) 3)
-   (= (count (filter #(= "S" %) (split set-of-cards))) 3)))
+  (let [current-set (split set-of-cards)]
+   (or
+    (= (count (filter #(= "H" %) current-set)) 3)
+    (= (count (filter #(= "S" %) current-set)) 3))))
