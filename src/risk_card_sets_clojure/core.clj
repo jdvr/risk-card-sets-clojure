@@ -9,5 +9,5 @@
   (let [current-set (split set-of-cards)]
    (or
     (and (some #(= % "H") current-set) (some #(= % "S") current-set) (some #(= % "C") current-set))
-    (= (count (filter #(= "H" %) current-set)) 3)
-    (= (count (filter #(= "S" %) current-set)) 3))))
+    (every? #(= "H" %) current-set)
+    (every? #(= "S" %) current-set))))
