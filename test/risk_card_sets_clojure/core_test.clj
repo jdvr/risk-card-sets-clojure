@@ -12,4 +12,10 @@
   (testing "given C-H-S it should return true"
     (is (= true (is-valid-set? "C-H-S"))))
   (testing "given C-C-C it should return true"
-    (is (= true (is-valid-set? "C-C-C")))))
+    (is (= true (is-valid-set? "C-C-C"))))
+  (testing "given C-J-C it should return true"
+    (is (= true (is-valid-set? "C-J-C"))))
+  (testing "given H-J-J it should return true"
+    (is (= true (is-valid-set? "H-J-J"))))
+  (testing "given H-J-S it should return false"
+    (is (= false (is-valid-set? "H-J-S")))))
